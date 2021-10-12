@@ -72,6 +72,9 @@ final class ElasticSearchServiceProvider extends ServiceProvider
         $this->publishes([
             __DIR__.'/../config/elasticsearch.php' => config_path('elasticsearch.php'),
         ], 'config');
+        $this->publishes([
+            __DIR__.'/../config/elasticscout.php' => config_path('elasticscout.php'),
+        ], 'config');
     }
 
     /**
